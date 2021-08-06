@@ -1,0 +1,328 @@
+import Head from 'next/head'
+import Image from 'next/image'
+import styles from '../styles/Home.module.css'
+
+export default function Home() {
+  return (
+  <>
+  <meta charSet="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Video Catalog</title>
+  <link rel="stylesheet" href="fontawesome/css/all.min.css" />{" "}
+  {/* https://fontawesome.com/ */}
+  <link
+    href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+    rel="stylesheet"
+  />
+  {/* https://fonts.google.com/ */}
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/templatemo-video-catalog.css" />
+  {/*
+
+TemplateMo 552 Video Catalog
+
+https://templatemo.com/tm-552-video-catalog
+
+*/}
+  <div className="tm-page-wrap mx-auto">
+    <div className="position-relative">
+      <div className="potition-absolute tm-site-header">
+        <div className="container-fluid position-relative">
+          <div className="row">
+            <div className="col-7 col-md-4">
+              <a
+                href="/"
+                className="tm-bg-black text-center tm-logo-container"
+              >
+                <i className="fas fa-video tm-site-logo mb-3" />
+                <h1 className="tm-site-name">Video Catalog</h1>
+              </a>
+            </div>
+            <div className="col-5 col-md-8 ml-auto mr-0">
+              <div className="tm-site-nav">
+                <nav
+                  className="navbar navbar-expand-lg mr-0 ml-auto"
+                  id="tm-main-nav"
+                >
+                  <button
+                    className="navbar-toggler tm-bg-black py-2 px-3 mr-0 ml-auto collapsed"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbar-nav"
+                    aria-controls="navbar-nav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                  >
+                    <span>
+                      <i className="fas fa-bars tm-menu-closed-icon" />
+                      <i className="fas fa-times tm-menu-opened-icon" />
+                    </span>
+                  </button>
+                  <div
+                    className="collapse navbar-collapse tm-nav"
+                    id="navbar-nav"
+                  >
+                    <ul className="navbar-nav text-uppercase">
+                      <li className="nav-item">
+                        <a className="nav-link tm-nav-link" href="/">
+                          Videos
+                        </a>
+                      </li>
+                      <li className="nav-item active">
+                        <a className="nav-link tm-nav-link" href="about">
+                          About <span className="sr-only">(current)</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link tm-nav-link" href="contact">
+                          Contact
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="tm-welcome-container tm-fixed-header tm-fixed-header-2">
+        <div className="text-center">
+          <p className="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 mt-lg-0 mt-5 text-white mx-auto">
+            Another Image BG
+            <br />
+            it can be fixed.
+            <br />
+            Content will simply slide over.
+          </p>
+        </div>
+      </div>
+      <div id="tm-fixed-header-bg" /> {/* Header image */}
+    </div>
+    {/* Page content */}
+    <main>
+      <div className="container-fluid px-0">
+        <div className="mx-auto tm-content-container">
+          <div className="row mt-3 mb-5 pb-3">
+            <div className="col-12">
+              <div className="mx-auto tm-about-text-container px-3">
+                <h2 className="tm-page-title mb-4 tm-text-primary">
+                  About the Video Catalog
+                </h2>
+                <p className="mb-4">
+                  Video Catalog is free HTML CSS template for your website. This
+                  Bootstrap v4.4.1 website template is 100% free download for
+                  everyone. You can modify and expand this template for your CMS
+                  websites. You can use it for commercial or non-commercial
+                  work. If you wish to support{" "}
+                  <a href="https://templatemo.com" className="tm-text-primary">
+                    TemplateMo
+                  </a>
+                  , please contact us.
+                </p>
+                <p className="mb-4">
+                  You are <u>not allowed</u> to re-distribute the template ZIP
+                  file on any template collection website.
+                </p>
+                <p className="mb-4">
+                  Vivamus sit amet justo sed erat iaculis consequat. Nulla
+                  suscipit posuere lectus ut venenatis. Proin sed orci eget
+                  tellus euismod vulputate eu eu arcu. Etiam a bibendum lorem.
+                  Curabitur ac bibendum odio. Vivamus euismod dui mauris, ut
+                  tincidunt mi congue quis.
+                </p>
+                <p className="mb-0">
+                  Phasellus luctus orci dolor, a luctus massa tincidunt vitae.
+                  Integer sit amet odio id libero tincidunt dignissim in eget
+                  arcu. Aliquam tristique ut magna sit amet tincidunt. Sed
+                  tempor tellus nulla, molestie luctus lectus tincidunt id. Cras
+                  duismod leo a urna placerat, vel blandit turpis fermentum.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="parallax-window"
+          data-parallax="scroll"
+          data-image-src="img/about-2.jpg"
+        />
+        <div className="mx-auto tm-content-container mt-4 px-3">
+          <div className="row tm-catalog-item-list mb-4">
+            <div className="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div className="tm-bg-gray p-4">
+                <i className="fas fa-headphones fa-5x p-3 mb-4 tm-about-icon" />
+                <h3 className="tm-text-primary mb-3">
+                  Cras convallis mollis justo
+                </h3>
+                <p>
+                  Sed dapibus vulputate diam nec hendrerit. In libero purus,
+                  interdum vitae purus nec, convallis sollicitudin nunc.
+                  Curabitur maximus maximus ex a scelerisque.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div className="tm-bg-gray p-4">
+                <i className="fas fa-broadcast-tower fa-5x p-3 mb-4 tm-about-icon" />
+                <h3 className="tm-text-primary mb-3">Nullam dictum pretium</h3>
+                <p>
+                  Quisque vestibulum lectus eros, tincidunt ultricies ante
+                  euismod non. Ut sed consequat est, quis lobortis lorem. Nullam
+                  dictum pretium mauris eu aliquam.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div className="tm-bg-gray p-4">
+                <i className="fas fa-film fa-5x p-3 mb-4 tm-about-icon" />
+                <h3 className="tm-text-primary mb-3">Etiam in quam dolor</h3>
+                <p>
+                  Aliquam in congue diam, non tincidunt ligula. Suspendisse
+                  facilisis elit eget quam semper aliquet. Donec ut purus
+                  aliquet, imperdiet lacus id, faucibus lectus.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div className="tm-bg-gray p-4">
+                <i className="far fa-map fa-5x p-3 mb-4 tm-about-icon" />
+                <h3 className="tm-text-primary mb-3">
+                  Duis ornare felis nec orci
+                </h3>
+                <p>
+                  Nam dapibus lectus ultricies neque feugiat eleifend. Donec
+                  ornare dolor suscipit metus hendrerit, vel malesuada neque
+                  mattis. Fusce posuere cursus mattis.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div className="tm-bg-gray p-4">
+                <i className="fas fa-rainbow fa-5x p-3 mb-4 tm-about-icon" />
+                <h3 className="tm-text-primary mb-3">
+                  Class aptent taciti sociosqu
+                </h3>
+                <p>
+                  Maecenas et libero in eros laoreet finibus sed vitae diam.
+                  Etiam consetetur, nunc sed pretium elementum, diam erat
+                  fringilla tortor, placerat condimentum.
+                </p>
+              </div>
+            </div>
+            <div className="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
+              <div className="tm-bg-gray p-4">
+                <i className="fas fa-cloud-sun-rain fa-5x p-3 mb-4 tm-about-icon" />
+                <h3 className="tm-text-primary mb-3">
+                  Suspendisse ut malesuada
+                </h3>
+                <p>
+                  Vestibulum non lectus id lacus aliquet porttitor in non nulla.
+                  Aenean urna diam, finibys id lorem nec, feugiat convallis
+                  dolor. Integer aliquam, eros eget rutrum iaculis.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          className="parallax-window"
+          data-parallax="scroll"
+          data-image-src="img/about-3.jpg"
+        />
+      </div>
+    </main>
+    <div className="container-fluid tm-content-container mx-auto pt-5">
+      {/* Subscribe form and footer links */}
+      <div className="row mt-5 pt-3">
+        <div className="col-xl-6 col-lg-12 mb-4">
+          <div className="tm-bg-gray p-5 h-100">
+            <h3 className="tm-text-primary mb-3">
+              Do you want to get our latest updates?
+            </h3>
+            <p className="mb-5">
+              Please subscribe our newsletter for upcoming new videos and latest
+              information about our work. Thank you.
+            </p>
+            <form action method="GET" className="tm-subscribe-form">
+              <input
+                type="text"
+                name="email"
+                placeholder="Your Email..."
+                required
+              />
+              <button
+                type="submit"
+                className="btn rounded-0 btn-primary tm-btn-small"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+        <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+          <div className="p-5 tm-bg-gray">
+            <h3 className="tm-text-primary mb-4">Quick Links</h3>
+            <ul className="list-unstyled tm-footer-links">
+              <li>
+                <a href="#">Duis bibendum</a>
+              </li>
+              <li>
+                <a href="#">Purus non dignissim</a>
+              </li>
+              <li>
+                <a href="#">Sapien metus gravida</a>
+              </li>
+              <li>
+                <a href="#">Eget consequat</a>
+              </li>
+              <li>
+                <a href="#">Praesent eu pulvinar</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="col-xl-3 col-lg-6 col-md-6 col-sm-6 col-12 mb-4">
+          <div className="p-5 tm-bg-gray h-100">
+            <h3 className="tm-text-primary mb-4">Our Pages</h3>
+            <ul className="list-unstyled tm-footer-links">
+              <li>
+                <a href="#">Our Videos</a>
+              </li>
+              <li>
+                <a href="#">License Terms</a>
+              </li>
+              <li>
+                <a href="#">About Us</a>
+              </li>
+              <li>
+                <a href="#">Contact</a>
+              </li>
+              <li>
+                <a href="#">Privacy Policies</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>{" "}
+      {/* row */}
+      <footer className="row pt-5">
+        <div className="col-12">
+          <p className="text-right">
+            Copyright 2020 The Video Catalog Company - Designed by{" "}
+            <a href="https://templatemo.com" rel="nofollow" target="_parent">
+              TemplateMo
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
+  </div>
+	<script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/parallax.min.js"></script>
+
+</>
+
+  )
+}
